@@ -1,0 +1,84 @@
+# WeatherApp
+
+## Overview
+WeatherApp is a Java-based weather application that fetches real-time weather data from the OpenWeatherMap API. The app provides the following features:
+
+- **Current weather**: Displays temperature, humidity, wind speed, and weather condition for a specified location.
+- **Unit conversion**: Convert temperatures between Celsius and Fahrenheit and wind speed between kilometers per hour (km/h) and miles per hour (mph).
+- **8-day forecast**: Displays a mock 8-day weather forecast.
+- **Search history**: Keeps a record of previously searched locations and their corresponding weather data.
+- **Weather icon**: Displays an icon representing the current weather conditions.
+
+The application has a graphical user interface (GUI) built using Java Swing.
+
+## Features
+- Search for weather in any city.
+- Convert temperature between Celsius and Fahrenheit.
+- Convert wind speed between km/h and mph.
+- View 8-day weather forecast (mock data for now).
+- View weather search history.
+- Dynamic background color based on weather conditions (clear, cloudy, rainy).
+- Display weather condition and an icon representing the current weather.
+
+## Technologies Used
+- **Java** (JDK 8 or later)
+- **Java Swing** (for GUI components)
+- **OpenWeatherMap API** (to fetch real-time weather data)
+- **JSON** (for parsing weather data)
+
+## Installation
+
+### Prerequisites
+Before you run the application, ensure you have:
+- **Java Development Kit (JDK)** installed on your system.
+- **Internet connection** to fetch weather data from OpenWeatherMap API.
+- **OpenWeatherMap API Key**. You can obtain it by signing up at [OpenWeatherMap](https://openweathermap.org/).
+
+### Steps
+1. Clone the repository to your local machine.
+   ```bash
+   git clone https://github.com/yourusername/WeatherApp.git
+   ```
+2. Open the project in your favorite IDE (e.g., IntelliJ IDEA, Eclipse).
+3. Add the **OpenWeatherMap API Key** to the `WeatherAPI` class.
+   - In the `WeatherAPI` class, replace the placeholder API key with your personal key:
+   ```java
+   private static final String API_KEY = "YOUR_API_KEY";
+   ```
+4. Run the `Main` class to start the application.
+
+## Usage
+1. **Launch the App**: Upon running the `Main` class, the Weather App window will appear.
+2. **Enter Location**: Type the name of a city or location into the search box and click **Search**.
+3. **View Weather**: The weather for the location will be displayed, including temperature, humidity, wind speed, and condition.
+4. **Switch Units**: Use the dropdown to switch between Celsius and Fahrenheit.
+5. **View 8-Day Forecast**: View the mock 8-day weather forecast (future development can fetch real data).
+6. **View History**: The search history will be updated with the latest searches.
+
+## Screenshots
+![Weather App Screenshot](./screenshot.png)  <!-- Add your screenshot here -->
+
+## Example
+After searching for "London", the app will display:
+- Temperature: 15.3°C
+- Humidity: 78%
+- Wind Speed: 5.4 m/s
+- Condition: Clear sky
+
+Additionally, it will display an icon for clear skies, and the background will change to a light blue color.
+
+## Contributing
+Feel free to contribute to this project. If you want to improve the app or fix a bug, follow these steps:
+
+1. Fork the repository.
+2. Create a new branch (`git checkout -b feature/your-feature-name`).
+3. Commit your changes (`git commit -am 'Add new feature'`).
+4. Push to the branch (`git push origin feature/your-feature-name`).
+5. Open a pull request.
+
+## License
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## Acknowledgements
+- Thanks to [OpenWeatherMap](https://openweathermap.org/) for providing free weather data.
+- This app was created to demonstrate how to fetch and display weather data in a Java application using APIs.
